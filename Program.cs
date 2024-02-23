@@ -24,7 +24,7 @@ var request = service.Cse.List();
 request.Q = "\"Craig Eddy\""; // search query
 request.SiteSearch = "clustrmaps.com flickr.com facebook.com twitter.com instagram.com linkedin.com beenverified.com mylife.com whitepages.com truthfinder.com spokeo.com cocofinder.com myheritage.com mylife.com usapeoplesearch.com";
 request.SiteSearchFilter = Google.Apis.CustomSearchAPI.v1.CseResource.ListRequest.SiteSearchFilterEnum.E;
-request.Fields = "queries,items(title,snippet,link,pagemap/metatags,pagemap/article,pagemap/cse_thumbnail)";
+request.Fields = "queries,items(displayLink,title,snippet,link,pagemap/metatags,pagemap/article,pagemap/cse_thumbnail)";
 request.Start = 1;
 request.Gl = "us"; // Geolocation of end user.
                    // The gl parameter value is a two-letter country code.
